@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="./script.js"></script>
+    <!-- Instruções
+    Nesta atividade vamos criar um modelo básico de formulário, seguindo as instruções abaixo.
+
+    Você foi contratado para desenvolver um formulário de cadastro para um evento de tecnologia aqui na Kenzie. 
+    Quem te contratou te passou as seguintes informações sobre o formulário:
+
+    Cada participante deve entrar com seu nome e e-mail, e esses campos devem ser obrigatórios, pois todos receberão os detalhes do evento via e-mail.
+    Deve haver um campo de descrição, onde o usuário vai descrever o que o motivou a participar do evento.
+    Deve haver um campo que permita que o usuário selecione seu módulo no curso da Kenzie.
+    No final, o usuário deverá obrigatoriamente cadastrar uma senha.
+    O usuário poderá optar por receber novidades em seu e-mail; para isso, poderá clicar em sim ou não.
+    O usuário clicará em Enviar para concluir seu cadastro para o evento.
+
+
+    Estruturação
+    Você deverá criar um formulário em seu arquivo com extensão .html.
+    Você deverá criar os inputs com os tipos corretos para seus valores esperados.
+    Você deverá criar uma <textarea> para receber a descrição do usuário.
+    Você deverá criar os campos de Senha e Confirmar senha com o tipo correto.
+    Para a pergunta sobre o recebimento de e-mails, deve utilizar os inputs com o tipo radio.
+    Você deverá criar um <button> do tipo submit para enviar os dados.
+    Para quebra de linhas você pode usar a tag <div>. -->
+
+    <form action="">
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Digite seu email" required><br><br>
+        <label for="descricao">Descrição</label><br>
+        <textarea name="descricao" id="descricao" placeholder="Digite o que motivou a participar do evente"></textarea><br>
+        <label for="criarSenha">Crie uma senha</label><br>
+        <input type="password" id="criarSenha" required placeholder="Cadastre uma senha"><br><br>
+        <label for="opcaoEmail">Deseja receber novidades por email?</label><br>
+        
+        <label for="sim">Sim</label>
+        <input id="sim" name="prefEmail" type="radio"><br>
+        <label for="nao">Não</label>
+        <input id="nao" name="prefEmail" type="radio"><br><br>
+
+        <input type="submit" value="ENVIAR">
+    </form>
+
+    
+</body>
+</html>
