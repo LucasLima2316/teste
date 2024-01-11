@@ -31,26 +31,42 @@
     Para a pergunta sobre o recebimento de e-mails, deve utilizar os inputs com o tipo radio.
     Você deverá criar um <button> do tipo submit para enviar os dados.
     Para quebra de linhas você pode usar a tag <div>. -->
+        <form>
+            <label for="name">Nome: </label><br>	
+            <input type="text" name="name" id="name" placeholder="Digite seu nome aqui"><br><br>
 
-    <form action="">
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" placeholder="Digite seu email" required><br><br>
-        <label for="descricao">Descrição</label><br>
-        <textarea name="descricao" id="descricao" placeholder="Digite o que motivou a participar do evente"></textarea><br>
-        <label for="criarSenha">Crie uma senha</label><br>
-        <input type="password" id="criarSenha" required placeholder="Cadastre uma senha"><br><br>
-        <label for="opcaoEmail">Deseja receber novidades por email?</label><br>
-        
-        <label for="sim">Sim</label> 
-        <input id="sim" name="prefEmail" type="radio"><br>
-        <label for="nao">Não</label>
-        <input id="nao" name="prefEmail" type="radio"><br><br>
+            <label for="email"></label><br>
+            <input type="email" name="email" id="email" placeholder="Digite seu email aqui"><br><br>
 
-        <input type="submit" value="ENVIAR">
-    </form>
+            <label for="descricao">O que te motivou a participar do evento?</label><br>
+            <textarea name="descricao" id="descricao" placeholder="Descreva aqui..."></textarea><br><br>
 
-    
+            <label for="modulo">Selecione o seu módulo</label><br>
+            <select name="modulo" id="modulo">
+                <option value="Modulo 1">Modulo 1</option>
+                <option value="Modulo 1">Modulo 2</option>
+                <option value="Modulo 1">Modulo 3</option>
+                <option value="Modulo 1">Modulo 4</option>
+            </select><br><br>
+
+            <label for="senha">Cadastre uma senha</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui"><br><br>
+
+            <label for="confirmaSenha">Confirme sua senha</label><br>
+            <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="Repita sua senha"><br><br>
+
+            <label for="novidades">Deseja receber novidades em seu email</label><br>
+            <label for="simNovidades">Sim</label>
+            <input type="radio" name="novidades" value="simNovidades" id="simNovidades">
+            <label for="naoNovidades">Não</label>
+            <input type="radio" name="novidades" value="naoNovidades" id="naoNovidades"><br><br>
+
+            <button type="submit">Cadastrar</button>
+
+
+
+        </form>
+
+
 </body>
 </html>
